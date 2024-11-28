@@ -27,7 +27,7 @@ body {
 }
 
 .logo-img {
-    width: 40px;
+    width: 60px;
     height: auto;
     margin-right: 10px;
 }
@@ -114,9 +114,56 @@ body {
     100% { transform: translateX(0); }
 }
 
+.albums-section {
+    padding: 90px;
+    text-align: center;
+    background-color: #547084; /* Cor de fundo da seção */
+}
+
+.albums-section h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.albums-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os álbuns se ajustem no mobile */
+}
+
+.album {
+    width: 350px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.album p {
+    font-size: 14px;
+    color: #666;
+}
+
+
 footer {
-    background-color: #a68b72;
-    color: white;
+    background-color: #B5E3D9;
+    color: 547084;
     padding: 50px 0;
     margin-top: auto; /* Garante que o footer fique no final */
 }
@@ -167,7 +214,7 @@ footer {
     width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid white;
-    background-color: #8a663f;
+    background-color: #53c5ac;
     color: white;
     outline: none;
     margin-bottom: 10px;
@@ -178,7 +225,7 @@ footer {
     padding: 10px;
     border: none;
     background-color: white;
-    color: #a68b72;
+    color: #729aa6;
     cursor: pointer;
     font-weight: bold;
 }
