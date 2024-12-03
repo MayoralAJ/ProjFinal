@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Parkinsans;
     background-color: #547084;
     min-height: 100vh;
     display: flex;
@@ -35,7 +36,7 @@ body {
 .navigation {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .navigation a {
@@ -114,10 +115,26 @@ body {
     100% { transform: translateX(0); }
 }
 
+.album-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #8BABCB;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.album-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
 .albums-section {
     padding: 90px;
     text-align: center;
-    background-color: #547084; /* Cor de fundo da seção */
+    background-color: #547084; 
 }
 
 .albums-section h2 {
@@ -130,13 +147,13 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que os álbuns se ajustem no mobile */
+    flex-wrap: wrap; 
 }
 
 .album {
     width: 320px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #d8ece6;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -165,7 +182,7 @@ footer {
     background-color: #B5E3D9;
     color: 547084;
     padding: 50px 0;
-    margin-top: auto; /* Garante que o footer fique no final */
+    margin-top: auto; 
 }
 
 .container-footer {
@@ -244,6 +261,50 @@ footer {
 
 @media (max-width: 600px) {
     .footer-col {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .album-container {
+        gap: 20px;
+    }
+
+    .album-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .album-container {
+        gap: 15px;
+    }
+
+    .album-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .album-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album-card {
+        width: 80%;
+    }
+
+    footer .footer-col {
         width: 100%;
     }
 }
